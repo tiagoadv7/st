@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <html lang="en">
+    <html lang="PT-BR">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.bootcss.com/typed.js/1.1.4/typed.min.js"></script>
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
@@ -36,7 +38,7 @@
           <div class="inner">
             <!-- HTML DA ANIMAÇÃO MUITO LOUCA DO SEU PRELOADER! -->
             <div class="bolas">
-              <img src="assets/img/load.gif"/>
+              <img src="assets/img/load.svg"/>
             </div>
           </div>
         </div>
@@ -52,16 +54,16 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link active-link"><i class="uil uil-estate"></i> Início</a>
+                            <a href="#home" class="nav__link active-link"><img src="https://img.icons8.com/ultraviolet/40/000000/home--v1.png" width="14rem"/> Início</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#about" class="nav__link"><i class="uil uil-user"></i> Sobre</a>
+                            <a href="#about" class="nav__link"><img src="https://img.icons8.com/ultraviolet/40/000000/about.png" width="14rem"/> Sobre</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#services" class="nav__link"><i class="uil uil-briefcase-alt"></i> Serviços</a>
+                            <a href="#services" class="nav__link"><img src="https://img.icons8.com/ultraviolet/40/000000/toolbox.png" width="14rem"/> Serviços</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#contact" class="nav__link"><i class="uil uil-message"></i> Contato</a>
+                            <a href="#contact" class="nav__link"><img src="https://img.icons8.com/ultraviolet/40/000000/contacts.png" width="14rem"/> Contato</a>
                         </li>
 
                         <i class='bx bx-moon change-theme' id="theme-button"></i>
@@ -71,6 +73,7 @@
                 <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bx-grid-alt'></i>
                 </div>
+                
                 <a target="_blank" href="https://wa.me/5591992806448" class="button button-flex">
                     <i class='bx bxl-whatsapp button__icon'></i> Entrar em contato
                 </a>
@@ -350,7 +353,7 @@
             <section class="about section container" id="about">
                 <div class="about__container grid">
                     <div class="about__data">
-                        <h2 class="section__title-center"><i class="uil uil-user"></i> Sobre mim</h2>
+                        <h2 class="section__title-center"><img src="https://img.icons8.com/ultraviolet/40/000000/about.png" width="20rem"/>  Sobre mim</h2>
                         <p class="about__description"><h4>Nascido em 19/12/1994</h4>
                             Meu nome é Tiago Lima, sou casado e formando em analise e desenvolvimento de sistemas pela instituição Uninter Centro Universitário Internacional.
                              Meu foco principal é me tornar uma referência na aréa de desenvolvimento e com isso conseguir ajudar outras pessoas. 
@@ -369,7 +372,7 @@
                 <div class="security__container grid">
                     <div class="security__data">
                         <div class="services__data">
-                            <h2 class="services__subtitle">Sua segurança
+                            <h2 class="services__subtitle"> <img src="https://img.icons8.com/ultraviolet/40/000000/security-checked.png" width="20rem"/>Sua segurança
                                é importante</h2>
                             <!--svg class="svg__color services__img" viewBox="0 0 121 94" xmlns="http://www.w3.org/2000/svg"-->
                            
@@ -390,7 +393,7 @@
 
             <!--=============== SERVICES ===============-->
             <section class="services section container" id="services">
-                <h2 class="section__title"> <i class="uil uil-briefcase-alt"> </i>Alguns serviços  Oferecidos</h2>
+                <h2 class="section__title"> <img src="https://img.icons8.com/ultraviolet/40/000000/toolbox.png" width="20rem"/> </i>Alguns serviços  Oferecidos</h2>
                 <div class="services__container grid">
                     <div class="services__data">
                         <h3 class="services__subtitle">Web Designer</h3>
@@ -449,6 +452,7 @@
                             <p class="services__description">Minhas habilidades Incluem: Desenvolvimento de sites com a mais alta tecnologia,
                                 Criacção de Logotiós e Artes Graficas de Alta Qualidade,
                                 Desenvolvimento de aplicativos para multplataformas.</p>
+                               
                            
                         </div>
                         <h2 class="section__title-center"></h2>
@@ -469,13 +473,95 @@
                     <!--svg class="svg__img svg__color app__img" viewBox="0 0 312 256" xmlns="http://www.w3.org/2000/svg"-->
                        
                 </div>
-            </section>
+                <section>
+                        <div class="services__data1">
+                            <h2 class="services__container grid"> <img src="https://img.icons8.com/ultraviolet/40/000000/activity-grid-2.png" width="20rem"/> Tecnologias Utilizadas</h2>
+                            <!--svg class="svg__color services__img" viewBox="0 0 121 94" xmlns="http://www.w3.org/2000/svg"-->
+                            <div class="portfolio" id="portfolio">
+                                <div class="content-inner">
+                                    <div class="content-header">
+                            <div class="row portfolio-container">
+                                <div class="col-lg-4 col-md-6 portfolio-item web-des">
+                                    <div class="portfolio-wrap">
+                                        <figure>
+                                            <img src="assets/img/undraw_static_html5.svg"class="img-fluid" alt="">
 
+                                            <a class="portfolio-title" > <span><h4> HTML5 é uma linguagem de marcação para a World Wide Web e é uma tecnologia chave da Internet, 
+                                             É a quinta versão da linguagem HTML.</h4> </span> </a>
+                                             <div class="skills__bar skills__html">
+                                
+                                            </div> <span class="skills__percentage">95%</span>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 portfolio-item web-des">
+                                    <div class="portfolio-wrap">
+                                        <figure>
+                                            <img src="assets/img/undraw_static_css3.svg"class="img-fluid" alt="">
+
+                                            <a class="portfolio-title" > <span><h4> CSS3 é a terceira mais nova versão das famosas Cascading Style Sheets,
+                                                 pela qual se define estilos para um projeto web. Efeitos de transição,e  design no layout da página.</h4></span> </a>
+                                            <div class="skills__bar skills__css">
+                                            </div> <span class="skills__percentage">65%</span></figure>
+                                    </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 portfolio-item web-des">
+                            <div class="portfolio-wrap">
+                                <figure>
+                                    <img src="assets/img/undraw_static_js.svg"class="img-fluid" alt="">
+
+                                    <a class="portfolio-title" > <span><h4> JavaScript é uma linguagem de programação interpretada estruturada, de script 
+                                        em alto nível com tipagem dinâmica fraca e multiparadigma.</h4></span> </a>
+                                    <div class="skills__bar skills__html">
+                                    </div> <span class="skills__percentage">85%</span></figure>
+                            </div>
+            </section>
+      
+
+            <section>
+                <div class="services__data1">
+                    <!--svg class="svg__color services__img" viewBox="0 0 121 94" xmlns="http://www.w3.org/2000/svg"-->
+                    <div class="portfolio" id="portfolio">
+                        <div class="content-inner">
+                            <div class="content-header">
+                    <div class="row portfolio-container">
+                        <div class="col-lg-4 col-md-6 portfolio-item web-des">
+                            <div class="portfolio-wrap">
+                                <figure>
+                                    <img src="assets/img/setting1.svg" width="50%" class="img-fluid" alt="">
+
+                                    <a class="portfolio-title" > <span><h4> Solucionar um problema diagnosticado no computador, ou antever o problema por meio de análise de situações no funcionamento.</h4> </span> </a>
+                                     <div class="skills__bar skills__html">
+                        
+                                    </div> <span class="skills__percentage">95%</span>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 portfolio-item web-des">
+                            <div class="portfolio-wrap">
+                                <figure>
+                                    <img src="assets/img/edt-alt.svg"class="img-fluid" alt="">
+
+                                    <a class="portfolio-title" > <span><h4> Design de interface de utilizador ou engenharia de interface de utilizador é o desenvolvimento de computadores, aplicações.</h4></span> </a>
+                                    <div class="skills__bar skills__css">
+                                    </div> <span class="skills__percentage">65%</span></figure>
+                            </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item web-des">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="assets/img/react.svg"class="img-fluid" alt="">
+
+                            <a class="portfolio-title" > <span><h4> React Native é uma biblioteca Javascript criada pelo Facebook. É usada para desenvolver aplicativos.</h4></span> </a>
+                            <div class="skills__bar skills__css">
+                            </div> <span class="skills__percentage">65%</span></figure>
+                    </div>
+    </section>
             <!--=============== CONTACT US ===============-->
             <section class="contact section container" id="contact">
                 <div class="contact__container grid">
                     <div class="contact__content">
-                        <h2 class="section__title-center"> <i class="uil uil-message"></i> Informações e contatos
+                        <h2 class="section__title-center"><img src="https://img.icons8.com/ultraviolet/40/000000/contacts.png" width="20rem"/> Informações e contatos
                         <p class="contact__description"></p>
                     </div>
 
@@ -493,6 +579,9 @@
                             <i class='bx bxl-whatsapp button__icon'></i> Whatsapp</a>
                     </div>
                 </div>
+
+
+
                 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
                 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
                 <script src="lib/easing/easing.min.js"></script>
